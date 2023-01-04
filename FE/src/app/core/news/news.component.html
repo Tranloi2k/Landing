@@ -1,0 +1,200 @@
+
+
+<!-- Hero Start -->
+<section class="bg-half bg-light d-table w-100" style="padding-top: 100px; padding-bottom: 50px" id="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <div class="page-next-level">
+            <h4 class="title"> akaCam's News </h4>
+            <div class="page-next">
+              <nav aria-label="breadcrumb" class="d-inline-block">
+                
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section-->
+  <div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <!-- Hero End -->
+  
+  <!--Blog Lists Start-->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <!-- Blog Post Start -->
+        <div class="col-lg-8 col-12">
+          <div class="row">
+            <div class="col-12 mb-4 pb-2" *ngFor="let data of news">
+              <div class="card blog rounded border-0 shadow overflow-hidden">
+                <div class="row align-items-center g-0">
+                  <div class="col-md-6">
+                    <img src="{{data.BannerImage}}" class="img-fluid" alt="">
+                    <div class="overlay bg-dark"></div>
+                    <div class="author">
+                      <small class="text-light user d-block"><i class="uil uil-user"></i> {{data.Author}}</small>
+                      <small class="text-light date"><i class="uil uil-calendar-alt"></i> {{data.TimeNew}}</small>
+                    </div>
+                  </div>
+                  <!--end col-->
+  
+                  <div class="col-md-6">
+                    <div class="card-body content">
+                      <h5><a (click)="goTo('news/'+data.Link, data.NewId)" style="cursor: pointer;" class="card-title title text-dark">{{data.Title}}</a></h5>
+                      <p class="text-muted mb-0" style="overflow: hidden; text-overflow: ellipsis;
+                      display: -webkit-box;
+                      -webkit-line-clamp: 3; 
+                       -webkit-box-orient: vertical;">{{data.ShortDescription}}</p>
+                      <div class="post-meta d-flex justify-content-between mt-3">
+                        <ul class="list-unstyled mb-0">
+                          <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i
+                                class="uil uil-heart me-1"></i>30</a></li>
+                        
+                        </ul>
+                        <a (click)="goTo('news/'+data.Link, data.NewId)" style="cursor: pointer;" class="text-primary h6">Read More <i
+                            class="uil uil-angle-right-b align-middle"></i></a>
+                         
+                      </div>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+                <!--end row-->
+              </div>
+              <!--end blog post-->
+            </div>
+            <!--end col-->
+            <!-- PAGINATION START -->
+            <div class="col-12">
+              <ul class="pagination justify-content-center mb-0">
+                <li class="page-item"><a class="page-link" (click)="pagination(currentPage-2)" aria-label="Previous">Prev</a></li>
+                
+               <li class="page-item"  *ngFor="let i of indexPage">
+                    <a class="page-link" *ngIf="currentPage != i" (click)="pagination(i-1)">{{i}}</a>
+                    <a class="page-link" style="background-color: rgb(47, 85, 212) !important; color: #fff" (click)="pagination(i-1)" *ngIf="currentPage == i">{{i}}</a>
+               </li>
+    
+                <li class="page-item"><a class="page-link" (click)="pagination(currentPage)" aria-label="Next">Next</a></li>
+              </ul>
+            </div>
+            <!--end col-->
+            <!-- PAGINATION END -->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end col-->
+        <!-- Blog Post End -->
+  
+        <!-- START SIDEBAR -->
+        <div class="col-lg-4 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+          <div class="card border-0 sidebar sticky-bar rounded shadow">
+            <div class="card-body">
+              <!-- SEARCH -->
+              <div class="widget">
+                <form role="search" method="get">
+                  <div class="input-group mb-3 border rounded">
+                    <input type="text" id="s" name="s" class="form-control border-0" placeholder="Search Keywords...">
+                    <button type="submit" class="input-group-text bg-transparent border-0" id="searchsubmit"><i
+                        class="uil uil-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <!-- SEARCH -->
+  
+              <!-- Categories -->
+              <!-- <div class="widget mb-4 pb-2">
+                <h5 class="widget-title">Categories</h5>
+                <ul class="list-unstyled mt-4 mb-0 blog-categories">
+                  <li><a href="jvascript:void(0)">Finance</a> <span class="float-end">13</span></li>
+                  <li><a href="jvascript:void(0)">Business</a> <span class="float-end">09</span></li>
+                  <li><a href="jvascript:void(0)">Blog</a> <span class="float-end">18</span></li>
+                  <li><a href="jvascript:void(0)">Corporate</a> <span class="float-end">20</span></li>
+                  <li><a href="jvascript:void(0)">Investment</a> <span class="float-end">22</span></li>
+                </ul>
+              </div> -->
+              <!-- Categories -->
+  
+              <!-- RECENT POST -->
+              <div class="widget mb-4 pb-2">
+                <h5 class="widget-title">Recent Post</h5>
+                <div class="mt-4">
+                  <div class="clearfix post-recent">
+                    <div class="post-recent-thumb float-start"> <a (click)="goTo('news/ckikhien', 2)" href="jvascript:void(0)"> <img alt="img"
+                          src="assets/img/blog/Ck_Ikhien1.jpg" class="img-fluid rounded"></a></div>
+                    <div class="post-recent-content float-start"><a (click)="goTo('news/ckikhien', 2)" href="jvascript:void(0)">akaCam tiến thẳng vào Chung kết năm iKhiến 2022</a><span
+                        class="text-muted mt-2">Dec 1, 2022</span></div>
+                  </div>
+                  <div class="clearfix post-recent">
+                    <div class="post-recent-thumb float-start"> <a (click)="goTo('news/hoi-nghi-Viet-Duc', 3)" href="jvascript:void(0)"> <img alt="img"
+                          src="assets/img/blog/blog-1.jpg" class="img-fluid rounded"></a></div>
+                    <div class="post-recent-content float-start"><a (click)="goTo('news/hoi-nghi-Viet-Duc', 3)" href="jvascript:void(0)">QAI đại diện FSOFT Quy Nhơn tham gia Hội nghị xúc tiến đầu tư Việt - Đức</a> <span class="text-muted mt-2">Dec 1, 2022</span></div>
+                  </div>
+                  <div class="clearfix post-recent">
+                    <div class="post-recent-thumb float-start"> <a (click)="goTo('news/AISummit2', 4)" href="jvascript:void(0)"> <img alt="img"
+                          src="assets/img/blog/blog-2.jpg" class="img-fluid rounded"></a></div>
+                    <div class="post-recent-content float-start"><a (click)="goTo('news/AISummit2', 4)" href="jvascript:void(0)">QAI tiếp đón Phó Thủ tướng tại AI Summit 2022</a> <span
+                        class="text-muted mt-2">Dec 1, 2022</span></div>
+                  </div>
+                </div>
+              </div>
+              <!-- RECENT POST -->
+  
+              <!-- TAG CLOUDS -->
+              <div class="widget mb-4 pb-2">
+                <h5 class="widget-title">Tags</h5>
+                <div class="tagcloud mt-4">
+                  <a href="jvascript:void(0)" class="rounded">akaCam</a>
+                  <a href="jvascript:void(0)" class="rounded">QAI</a>
+                  <a href="jvascript:void(0)" class="rounded">fPT Software</a>
+                  <a href="jvascript:void(0)" class="rounded">AI</a>
+                  <a href="jvascript:void(0)" class="rounded">Computer Vision</a>
+                  <a href="jvascript:void(0)" class="rounded">Work Safety</a>
+                
+                </div>
+              </div>
+              <!-- TAG CLOUDS -->
+  
+              <!-- SOCIAL -->
+              <div class="widget">
+                <h5 class="widget-title">Follow us</h5>
+                <ul class="list-unstyled social-icon mb-0 mt-4">
+                  <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
+                      <i-feather name="facebook" class="fea icon-sm fea-social"></i-feather>
+                    </a></li>
+              
+                  <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                      <i-feather name="twitter" class="fea icon-sm fea-social"></i-feather>
+                    </a></li>
+                  <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                      <i-feather name="github" class="fea icon-sm fea-social"></i-feather>
+                    </a></li>
+                 
+                </ul>
+                <!--end icon-->
+              </div>
+              <!-- SOCIAL -->
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+        <!-- END SIDEBAR -->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section -->
+  <!--Blog Lists End-->
+  

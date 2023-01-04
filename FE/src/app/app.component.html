@@ -1,0 +1,5 @@
+<app-header *ngIf="router.url != '/error' " [navClass]="addclass"></app-header>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+<app-footer *ngIf="router.url != '/error' " ></app-footer>
+
+

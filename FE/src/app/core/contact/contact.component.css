@@ -1,0 +1,14 @@
+::ng-deep .navigation-menu {
+    justify-content: right !important;
+  }
+  
+  ::ng-deep .navigation-menu li a{
+    text-transform: none !important;
+    font-size: 1em !important;
+  }
+  
+  ::ng-deep .submenu{
+    text-transform: none !important;
+    font-size: 0.85em !important;
+  }
+  

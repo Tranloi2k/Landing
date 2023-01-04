@@ -1,0 +1,180 @@
+<a href="javascript: void(0);" style="bottom: 55px" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
+    <i-feather name="arrow-up" class="icons"></i-feather>
+</a>
+
+  <div *ngIf="!hideFooter">
+    <div *ngIf="footerVariant == 'bg-light';else execute_block">
+      <!-- Footer Start -->
+      <footer class="footer bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+              <a href="#" class="logo-footer">
+                <img src="assets/images/logoakacam.png" height="40" alt="">
+              </a>
+              <p class="mt-4 text-muted">akaCam is product analyzes human behavior through Computer Vision and can be
+                widely applied in many fields with high accuracy. The product stands out for its behavioral
+                recognition, easy tracking, and recording of the subject's range of activities.</p>
+              <ul class="list-unstyled social-icon social mb-0 mt-4">
+                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="facebook" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="instagram" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="twitter" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="linkedin" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+              </ul>
+              <!--end icon-->
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <h5 class="text-dark footer-head">Useful Links</h5>
+              <ul class="list-unstyled footer-list mt-4">
+                <li><a routerLink="/page-aboutus" class="text-muted"><i class="uil uil-angle-right-b me-1"></i>
+                  Home</a></li>
+                <li><a routerLink="/page-services" class="text-muted"><i class="uil uil-angle-right-b me-1"></i>
+                  Solutions</a></li>
+                <li><a routerLink="/page-team" class="text-muted"><i class="uil uil-angle-right-b me-1"></i>
+                  News</a></li>
+                <li><a routerLink="/page-pricing" class="text-muted"><i class="uil uil-angle-right-b me-1"></i>
+                  About Us</a></li>
+              </ul>
+            </div>
+            <!--end col-->
+
+            
+
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <h5 class="text-dark footer-head">Contact</h5>
+              <p class="mt-4 text-muted">12 Science Avenue, Ghenh Rang, Quy Nhon, Binh Dinh, Viet Nam</p>
+
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <div class="container text-center">
+            <div class="row align-items-center">
+  
+              <div>
+                <p class="mb-0">©
+                  <script type="text/javascript" id="www-widgetapi-script"
+                    src="https://www.youtube.com/s/player/5d56cf74/www-widgetapi.vflset/www-widgetapi.js"
+                    async=""></script>
+                  <script id="iframe_api" src="https://www.youtube.com/iframe_api"></script> {{year}}
+                  Copyright <strong><span>akaCam</span></strong>. All Rights Reserved
+                </p>
+              </div>
+  
+              <!--end col-->
+  
+  
+              <!--end col-->
+            </div>
+            <!--end row-->
+          </div>
+        </div>
+        <!--end container-->
+      </footer>
+      <!-- Footer End -->
+    </div>
+    <ng-template #execute_block>
+      <footer class="footer bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-12 mb-0 mb-md-4 pb-0 pb-md-2" style="padding-right: 40px;">
+              <a href="#" class="logo-footer">
+                <img src="assets/images/logoakacam.png" height="40" alt="">
+              </a>
+              <p class="mt-4">akaCam is product analyzes human behavior through Computer Vision and can be
+                widely applied in many fields with high accuracy. The product stands out for its behavioral
+                recognition, easy tracking, and recording of the subject's range of activities.</p>
+              <ul class="list-unstyled social-icon social mb-0 mt-4">
+                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="facebook" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="instagram" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="twitter" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
+                    <i-feather name="linkedin" class="fea icon-sm fea-social"></i-feather>
+                  </a></li>
+              </ul>
+              <!--end icon-->
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <h5 class="text-dark footer-head" style="padding-top: 10px;">Useful Links</h5>
+              <ul class="list-unstyled footer-list mt-4">
+                <li><a routerLink="/" class="text-foot">
+                    Home</a></li>
+                
+                    <div class="dropdown-primary" ngbDropdown>
+                      
+                      <li><a class="text-foot dropdown-toggle" data-toggle="dropdown" ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
+                        Solutions</a></li>
+                      <div class="dropdown-menu text-foot" ngbDropdownMenu>
+                        <a class="dropdown-item text-foot" href="#">Home</a>
+                        <a class="dropdown-item text-foot" href="#">Services</a>
+                        <a class="dropdown-item text-foot" href="#">About us</a>
+                     
+                        <a class="dropdown-item text-foot" href="#">Contact us</a>
+                      </div>
+                   </div>
+                <li><a routerLink="/news" class="text-foot">
+                    News</a></li>
+                <li><a routerLink="/about" class="text-foot">
+                    About Us</a></li>
+
+
+              </ul>
+            </div>
+            <!--end col-->
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <h5 class="text-dark footer-head" style="padding-top: 10px;">Contact Us</h5>
+              <p>12 Science Avenue, Ghenh Rang, Quy Nhon, Binh Dinh, Viet Nam</p>
+              <ul class="list-unstyled footer-list mt-4">
+                <li>
+
+                </li>
+              </ul>
+            </div>
+
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+        <div class="container text-center">
+          <div class="row align-items-center">
+
+            <div>
+              <p class="mb-0">©
+                <script type="text/javascript" id="www-widgetapi-script"
+                  src="https://www.youtube.com/s/player/5d56cf74/www-widgetapi.vflset/www-widgetapi.js"
+                  async=""></script>
+                <script id="iframe_api" src="https://www.youtube.com/iframe_api"></script> {{year}}
+                Copyright <strong><span>akaCam</span></strong>. All Rights Reserved
+              </p>
+            </div>
+
+            <!--end col-->
+
+
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+      </footer>
+    </ng-template>
+  </div>

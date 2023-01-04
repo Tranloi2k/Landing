@@ -1,0 +1,320 @@
+<section class="bg-half bg-light d-table w-100" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-12">
+                <div class="title-heading">
+                    <span class="badge rounded-pill bg-soft-primary">{{solution.Title}}</span>
+                    <h1 class="fw-bold mt-2 mb-3">A Great Package For {{solution.Title}}</h1>
+                    <p class="para-desc text-muted">Launch your campaign and benefit from our expertise on designing and
+                        managing conversion centered bootstrap v5 html page.</p>
+                </div>
+            </div>
+            <!--end col-->
+            <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <img src="assets/images/shop/retails.png" class="img-fluid d-block mx-auto" width="100%" alt="">
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+
+<section class="py-4">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="section-title mb-4 pb-2">
+                <h4 class="title mb-4">Key Features</h4>
+                <p class="text-muted para-desc mx-auto mb-0">{{solution.Quote1}}</p>
+            </div>
+        </div>
+        <!--end col-->
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-4 pt-2" *ngFor="let data of featuresdata">
+                    <div class="d-flex key-feature align-items-center p-3 rounded shadow">
+                        <div class="icon text-center rounded-circle me-3">
+                            <i-feather name="{{data.icon}}" class="fea icon-ex-md text-primary"></i-feather>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="title mb-0">{{data.title}}</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--end col-->
+
+<section class="py-4">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="section-title mb-4 pb-2">
+                <h4 class="title mb-4">Why akaCam For {{solution.Title}}?</h4>
+                <p class="text-muted para-desc mx-auto mb-0">{{solution.Quote2}}</p>
+            </div>
+        </div>
+        <!--end col-->
+    </div>
+</section>
+
+<!-- Start -->
+<section class="py-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-8 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="d-flex features feature-clean core-feature rounded shadow p-4  bg-light">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-user-circle d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="flex-1 ms-4">
+                                <a href="javascript:void(0)" class="title text-dark h5">Employees Monitoring</a>
+                                <p class="text-muted mt-2 mb-0">Monitor staff behavior and attitude towards customers,
+                                    give warnings and reminders to management. Helps increase customer satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mt-4 pt-2"></div>
+
+                    <div class="col-md-8 mt-4  pt-2 ">
+                        <div class="d-flex features feature-clean core-feature rounded shadow p-4  bg-light">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-ninja d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="flex-1 ms-4">
+                                <a href="javascript:void(0)" class="title text-dark h5">Thieves Detection
+                                </a>
+                                <p class="text-muted mt-2 mb-0">AI-powered video analytics are faster and more accurate than traditional surveillance systems, offering monitoring, fraudulent activity predictions, searchable video, and alerts for suspicious behavior.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mt-4 pt-2">
+                        <div class="d-flex features feature-clean core-feature rounded shadow p-4  bg-light">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-map-marker-alt d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="flex-1 ms-4">
+                                <a href="javascript:void(0)" class="title text-dark h5">Activities Heatmap
+                                </a>
+                                <p class="text-muted mt-2 mb-0">Provides highly concentrated customer area charts. Help
+                                    identify goods in great demand, arrange reasonable shelves.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mt-4 pt-2">
+                    </div>
+                    <div class="col-md-8 mt-4 pt-2">
+                        <div class="d-flex features feature-clean core-feature rounded shadow p-4 bg-light">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-head-side-mask d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="flex-1 ms-4">
+                                <a href="javascript:void(0)" class="title text-dark h5">Masked-Face Checking
+                                </a>
+                                <p class="text-muted mt-2 mb-0">Detect and warn people who are not wearing masks in the
+                                    store, helping to prevent the spread of disease.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--end row-->
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+
+
+<section class="py-4">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="section-title mb-4 pb-2">
+               
+                <p class="text-muted para-desc mx-auto mb-0">Updating</p>
+            </div>
+        </div>
+        <!--end col-->
+    </div>
+</section>
+
+<section class="py-4">
+    <div class="container">
+        <div class="card bg-light rounded border-0 overflow-hidden">
+            <div class="row no-gutters align-items-center">
+                <div class="col-lg-6">
+                    <img src="assets/images/shop/product/retail-la-gi.jpeg" style="height: 300px;" class="img-fluid" alt="">
+                </div>
+                <!--end col-->
+                <div class="col-lg-6">
+                    <div class="card-body section-title p-md-5">
+                       
+                        <h4 class="title mb-4 mt-4">We Are Creative Dreamers and Co-workers</h4>
+                        <p class="text-muted mx-auto para-desc mb-0">Start working with Landrick that can provide
+                            everything you
+                            need to generate awareness, drive traffic, connect.</p>
+                        <ng-template #content let-modal>
+                            <div class="modal-header">
+                                <button type="button" class="close" aria-label="Close"
+                                    (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <youtube-player [videoId]="'yba7hPeTSjk'" height="450" width="780">
+                                </youtube-player>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+
+<section class="py-4">
+    <div class="container">
+        <div class="card bg-light rounded border-0 overflow-hidden">
+            <div class="row no-gutters align-items-center">
+                <!--end col-->
+                <div class="col-lg-6">
+                    <div class="card-body section-title p-md-5">
+                        <h4 class="title mb-4 mt-4">We Are Creative Dreamers and Co-workers</h4>
+                        <p class="text-muted mx-auto para-desc mb-0">Start working with Landrick that can provide
+                            everything you
+                            need to generate awareness, drive traffic, connect.</p>
+                        <ng-template #content let-modal>
+                            <div class="modal-header">
+                                <button type="button" class="close" aria-label="Close"
+                                    (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <youtube-player [videoId]="'yba7hPeTSjk'" height="450" width="780">
+                                </youtube-player>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="assets/images/shop/product/spm.jpg" class="img-fluid" style="height: 300px;" alt="">
+                </div>
+                <!--end col-->
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+
+<section class="py-4">
+    <div class="container">
+        <div class="card bg-light rounded border-0 overflow-hidden">
+            <div class="row no-gutters align-items-center">
+                <div class="col-lg-6">
+                    <img src="assets/images/shop/product/emp.jpg" style="height: 300px;" class="img-fluid" alt="">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-6">
+                    <div class="card-body section-title p-md-5">
+                       
+                        <h4 class="title mb-4 mt-4">We Are Creative Dreamers and Co-workers</h4>
+                        <p class="text-muted mx-auto para-desc mb-0">Start working with Landrick that can provide
+                            everything you
+                            need to generate awareness, drive traffic, connect.</p>
+                        <ng-template #content let-modal>
+                            <div class="modal-header">
+                                <button type="button" class="close" aria-label="Close"
+                                    (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <youtube-player [videoId]="'yba7hPeTSjk'" height="450" width="780">
+                                </youtube-player>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section>
+
+<section class="section">
+    <div class="case">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-4">Use Case</h4>
+                    <p class="text-muted para-desc mb-0 mx-auto">Updating</p>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+
+        <div class="row projects-wrapper">
+            <owl-carousel-o [options]="Option">
+
+                <ng-template carouselSlide *ngFor="let item of caseItems" style="height: 100%;">
+
+                    <div class="card blog border-0 work-classic shadow rounded-md overflow-hidden bg-light"
+                        style="border-color: black; margin: 30px; height: 650px;">
+                        <img src="{{item.image}}" class="img-fluid work-image" style="height: 300px;" alt="">
+                        <div class="card-body">
+                            <div class="content" style="height: 100%; padding-left: 15px;  padding-right: 15px;">
+                                <h5 class="mt-3" style="text-align: center;"><a 
+                                        class="text-dark title">{{item.name}}</a></h5>
+
+                                        <div style="padding-bottom: 30px;">
+                                            <div class="d-flex" *ngFor="let detail of item.details" >
+                                                <div class="icons text-primary text-center mx-auto" style="padding-top: 4px;">
+                                                    <i class="uil uil-check" width="30px"></i>
+                                                </div>
+                                                <div class="flex-1 ms-4">
+                                                    <p class="text-muted" style="overflow: hidden; text-overflow: ellipsis;
+                                                            display: -webkit-box;
+                                                            -webkit-line-clamp: 2; 
+                                                             -webkit-box-orient: vertical; "> {{detail}}</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                <a style="bottom: 10px; position: absolute" href="javascript:void(0)" class="text-primary h6">Read More <i
+                                        class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </ng-template>
+            </owl-carousel-o>
+
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+<!--end section-->

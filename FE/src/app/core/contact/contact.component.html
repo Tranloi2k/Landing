@@ -1,0 +1,210 @@
+
+<!-- Start Contact -->
+<section class="bg-half bg-light d-table w-100" style="padding-top: 100px; padding-bottom: 50px" id="home">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="page-next-level">
+                    <h4 class="title"> Contact Us </h4>
+                    <div class="page-next">
+                        <nav aria-label="breadcrumb" class="d-inline-block">
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+
+<div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+
+<section class="section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 text-center features feature-clean">
+                    <div class="icons text-primary text-center mx-auto">
+                        <i class="uil uil-phone d-block rounded h3 mb-0"></i>
+                    </div>
+                    <div class="content mt-3">
+                        <h5 class="fw-bold">Phone</h5>
+                        <p class="text-muted">Start working with Landrick that can provide everything</p>
+                        <a href="tel:+152534-468-854" class="text-primary">+152 534-468-854</a>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+
+            <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="card border-0 text-center features feature-clean">
+                    <div class="icons text-primary text-center mx-auto">
+                        <i class="uil uil-envelope d-block rounded h3 mb-0"></i>
+                    </div>
+                    <div class="content mt-3">
+                        <h5 class="fw-bold">Email</h5>
+                        <p class="text-muted">Start working with Landrick that can provide everything</p>
+                        <a href="mailto:contact@example.com" class="text-primary">contact@example.com</a>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+
+            <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="card border-0 text-center features feature-clean">
+                    <div class="icons text-primary text-center mx-auto">
+                        <i class="uil uil-map-marker d-block rounded h3 mb-0"></i>
+                    </div>
+                    <div class="content mt-3">
+                        <h5 class="fw-bold">Location</h5>
+                        <p class="text-muted">12 Science Avenue, Ghenh Rang, Quy Nhon,
+                            Binh Dinh, Viet Nam</p>
+                        <a (click)="mapView(content)" href="javascript:void(0);" data-type="iframe"
+                            class="video-play-icon text-primary">View on Google map</a>
+                        <ng-template #content let-modal>
+                            <div class="modal-header">
+                                <button type="button" class="close" aria-label="Close"
+                                    (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas"><iframe width="955" height="500" id="gmap_canvas"
+                                            src="https://maps.google.com/maps?q=12%20%C4%90%E1%BA%A1i%20l%E1%BB%99%20Khoa%20h%E1%BB%8Dc,%20khu%20v%E1%BB%B1c%202,%20Th%C3%A0nh%20ph%E1%BB%91%20Qui%20Nh%C6%A1n,%20B%C3%ACnh%20%C4%90%E1%BB%8Bnh&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                            href="https://2piratebay.org">pirate bay</a><br>
+                                        <style>
+                                            .mapouter {
+                                                position: relative;
+                                                text-align: right;
+                                                height: 500px;
+                                                width: 955px;
+                                            }
+                                        </style><a href="https://www.embedgooglemap.net">use google map on website</a>
+                                        <style>
+                                            .gmap_canvas {
+                                                overflow: hidden;
+                                                background: none !important;
+                                                height: 500px;
+                                                width: 955px;
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+
+    <div class="container mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1">
+                <div class="card shadow rounded border-0">
+                    <div class="card-body py-5">
+                        <h4 class="card-title">Get In Touch !</h4>
+                        <div class="custom-form mt-3">
+                            <form method="post" name="myForm" onsubmit="return validateForm()">
+                                <p id="error-msg" class="mb-0"></p>
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Your Name <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i-feather name="user" class="fea icon-sm icons"></i-feather>
+                                                <input name="name" id="name" type="text" class="form-control ps-5"
+                                                    placeholder="Name :">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Your Email <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i-feather name="mail" class="fea icon-sm icons"></i-feather>
+                                                <input name="email" id="email" type="email" class="form-control ps-5"
+                                                    placeholder="Email :">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Subject</label>
+                                            <div class="form-icon position-relative">
+                                                <i-feather name="book" class="fea icon-sm icons"></i-feather>
+                                                <input name="subject" id="subject" class="form-control ps-5"
+                                                    placeholder="subject :">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Content <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i-feather name="message-circle" class="fea icon-sm icons clearfix">
+                                                </i-feather>
+                                                <textarea name="comments" id="comments" rows="4"
+                                                    class="form-control ps-5" placeholder="Content :"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button type="submit" id="submit" name="send" class="btn btn-primary">Send
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                            </form>
+                        </div>
+                        <!--end custom-form-->
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-7 col-md-6 order-1 order-md-2">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <img src="assets/images/contact.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+
+
+    <!--end container-->
+</section>
+

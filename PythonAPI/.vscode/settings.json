@@ -1,0 +1,9 @@
+{
+    "python.analysis.extraPaths": [
+        "./app/main/service/product_service",
+        "./app/main/service/mysql_connect_service",
+        "./app/main/service/news_service",
+        "./app/main/service/auth_service",
+        "./app/main/service/users_service"
+    ]
+}
