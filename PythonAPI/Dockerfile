@@ -1,5 +1,5 @@
 # Set base image (host OS)
-FROM python:3.8-slim-buster
+FROM python:3.8
 
 # By default, listen on port 5000
 
