@@ -1,4 +1,4 @@
-user = 'root'
+user = 'admin'
 password = 'tranloi710'
-host='127.0.0.1'
+host='landing.ceubh1jnievw.ap-northeast-1.rds.amazonaws.com'
 database = 'landingpage'
