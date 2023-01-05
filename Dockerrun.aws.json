@@ -16,7 +16,7 @@
      },
      {
        "name": "api",
-       "image": "{public.ecr.aws/j5g4t9t6/python_api",
+       "image": "public.ecr.aws/j5g4t9t6/python_api",
        "hostname": "api",
        "essential": true,
        "memory": 512,
