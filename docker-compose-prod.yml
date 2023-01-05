@@ -9,7 +9,7 @@ services:
       - "5000:5000"
   ui: 
     build: 
-      context: ./ui
+      context: ./FE
     container_name: ui
     image: public.ecr.aws/j5g4t9t6/angular_ui
     ports: 
