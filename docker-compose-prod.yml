@@ -1,12 +1,12 @@
 version: '3'
 services: 
-  api: 
-    build: 
-      context: ./PythonAPI
-    container_name: api
-    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/app_api
-    ports: 
-      - "5000:5000"
+  # api: 
+  #   build: 
+  #     context: ./PythonAPI
+  #   container_name: api
+  #   image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/app_api
+  #   ports: 
+  #     - "5000:5000"
   ui: 
     build: 
       context: ./FE
@@ -14,14 +14,14 @@ services:
     image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/app_ui
     ports: 
       - "4200:4200"
-  nginx: 
-    container_name: nginx
-    depends_on: 
-      - ui
-      - api
-    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/app-nginx
-    ports: 
-      - "80:80"
-    build:
-      context: ./nginx
+  # nginx: 
+  #   container_name: nginx
+  #   depends_on: 
+  #     - ui
+  #     - api
+  #   image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/app-nginx
+  #   ports: 
+  #     - "80:80"
+  #   build:
+  #     context: ./nginx
   

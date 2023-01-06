@@ -13,34 +13,7 @@
            "containerPort": 4200
          }
        ]
-     },
-     {
-       "name": "api",
-       "image": "{$AWS_ACCOUNT_ID}.dkr.ecr.{$AWS_DEFAULT_REGION}.amazonaws.com/app_api",
-       "hostname": "api",
-       "essential": true,
-       "memory": 512,
-       "portMappings": [
-         {
-           "hostPort": 5000,
-           "containerPort": 5000
-         }
-       ]
-     },
-     {
-      "name": "nginx",
-      "image": "{$AWS_ACCOUNT_ID}.dkr.ecr.{$AWS_DEFAULT_REGION}.amazonaws.com/app-nginx",
-      "hostname": "nginx",
-      "essential": true,
-      "portMappings": [ 
-        {
-          "hostPort": 80,
-          "containerPort": 80
-        }
-      ],
-      "links": ["ui", "api"],
-      "memory": 512
-    }
-
+     }
+  
    ]
  }
