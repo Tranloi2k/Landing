@@ -4,14 +4,14 @@ services:
     build: 
       context: ./PythonAPI
     container_name: api
-    image: public.ecr.aws/j5g4t9t6/python_api
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/app-api
     ports: 
       - "5000:5000"
   ui: 
     build: 
       context: ./FE
     container_name: ui
-    image: public.ecr.aws/j5g4t9t6/angular_ui
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/app-ui
     ports: 
       - "4200:4200"
   

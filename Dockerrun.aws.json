@@ -3,7 +3,7 @@
    "containerDefinitions": [
      {
        "name": "ui",
-       "image": "public.ecr.aws/j5g4t9t6/angular_ui",
+       "image": "{$AWS_ACCOUNT_ID}.dkr.ecr.{$AWS_DEFAULT_REGION}.amazonaws.com/app-ui",
        "hostname": "ui",
        "essential": true,
        "memory": 1024,
@@ -16,7 +16,7 @@
      },
      {
        "name": "api",
-       "image": "public.ecr.aws/j5g4t9t6/python_api",
+       "image": "{$AWS_ACCOUNT_ID}.dkr.ecr.{$AWS_DEFAULT_REGION}.amazonaws.com/app-api",
        "hostname": "api",
        "essential": true,
        "memory": 512,
