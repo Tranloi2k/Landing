@@ -1,5 +1,5 @@
 {
-   "AWSEBDockerrunVersion": 1,
+   "AWSEBDockerrunVersion": 2,
    "containerDefinitions": [
      {
        "name": "ui",
@@ -26,6 +26,21 @@
            "containerPort": 5000
          }
        ]
-     }
+     },
+     {
+      "name": "nginx",
+      "image": "{$AWS_ACCOUNT_ID}.dkr.ecr.{$AWS_DEFAULT_REGION}.amazonaws.com/app-nginx",
+      "hostname": "nginx",
+      "essential": true,
+      "portMappings": [ 
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": ["ui", "api"],
+      "memory": 512
+    }
+
    ]
  }
