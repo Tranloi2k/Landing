@@ -1,19 +1,14 @@
-{
-   "AWSEBDockerrunVersion": 1,
-   "containerDefinitions": [
-     {
-       "name": "ui",
-       "image": "{$AWS_ACCOUNT_ID}.dkr.ecr.{$AWS_DEFAULT_REGION}.amazonaws.com/app_ui",
-       "hostname": "ui",
-       "essential": true,
-       "memory": 1024,
-       "portMappings": [
-         {
-           "hostPort": 4200,
-           "containerPort": 4200
-         }
-       ]
-     }
-  
-   ]
- }
+
+ {
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+      "Name": "{$AWS_ACCOUNT_ID}.dkr.ecr.{$AWS_DEFAULT_REGION}.amazonaws.com/app_ui",
+      "Update": "true"
+  },
+  "Ports": [
+      {
+          "ContainerPort": 4200,
+          "HostPort": 4200
+      }
+  ]
+}
